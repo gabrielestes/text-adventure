@@ -1,11 +1,185 @@
 <!DOCTYPE html>
 <head>
   <title>Hack the Network</title>
-  <meta charset="utf-8" />
+  <meta charset="utf-8"/>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-
-
-
-
-
+<body>
+  <h1>The Viva Hack</h1>
+    <page class="intro">
+      <p>
+        The year is 2035. The economic crash of 2029 sent large corporations
+        into desperate situations, banding with hacker groups from Russia and China.
+      </p>
+      <p>
+        The U.S. government’s DoD is too preoccupied with defending against an
+        influx of foreign cyber attacks for them to monitor large corporations.
+      </p>
+      <button class="next-cell">Next</button>
+    </page>
+    <page class="cell">
+      <h2 class="part-one">The Crime</h2>
+      <p>
+        It’s been two years since you were convicted of a cyber attack against Viva Pharmaceuticals.
+        Going to prison wasn’t the worst that could come from attempting to expose the corporation's trade deals with black market drug suppliers.
+      </p>
+      <p>
+        People you know have disappeared. Notably, a few from your Iron Fist cohort.
+        Your attack on the company would’ve led to intel on the location of your friends.
+        The information’s there, you just need to try again...
+      </p>
+      <button class="next-console">Next</button>
+    </page>
+    <page class="console">
+      <h2 class="part-one">The Cell</h2>
+      <p>
+        You’re in a cell. The cell bars are controlled by consoles to the right of door hinges.
+        You look down at the floor, and notice four wires running up to the console.
+        You pull out some nail clippers from your shoe.
+      </p>
+      <p>
+        Will you cut the red, blue, white, or black wire? You know that one of
+        these will set off the alarm...
+      </p>
+      <button class="option-red">Red</button>
+      <button class="option-blue">Blue</button> <!--WRONG-->
+      <button class="option-white">White</button>
+      <button class="option-black">Black</button>
+    </page>
+    <page class="hallway">
+      <h2>Outside the Cell</h2>
+      <p>
+        Great work.
+      </p>
+      <p>
+        The cell door opens to a hall. There's a door at the end, and a door to the
+        side. The door has a wooden tag with the sheriff's name engraved into it.
+      </p>
+      <p>
+        Do you open the sheriff's door or proceed to the end of the hall?
+      </p>
+      <button class="option-sheriff-door">Sheriff's Door</button><!--WRONG-->
+      <button class="option-end-door">End Door</button>
+    </page>
+    <page class="outside">
+      <h2>Go Home</h2>
+        <p>
+          You exit through the back door and find yourself in the alley that cuts
+          through to the main downtown street. You could get to your apartment faster
+          if you take that route...but your chance of detection from cops is higher.
+          Two turns.
+        </p>
+        <p>
+          To your left is another end of the alley, but you'd have to trespass gang
+          territory. Three turns.
+        </p>
+      <button class="option-main">Main Street</button>
+      <button class="option-gang">Gang Territory</button>
+    </page>
+    <page class="gang">
+      <h2>Gang Territory</h2>
+        <p>
+          These alleys are littered with dumpsters, stray animals, rusted pipes, and
+          inebriated junkies.
+      </p>
+      <button class="option-proceed-gang">Proceed</button>
+    </page>
+    <page class="success-gang">
+      <h2>You're Safe</h2>
+        <p>
+          You did not encounter any hostiles.
+        </p>
+        <button class="option-proceed-gang">Proceed</button>
+    </page>
+      <page class="fight-gang">
+        <h2 class="danger">Gang Fight</h2>
+          <p>
+            You've encountered a gang member who doesn't like your face. Their left
+            shoulder shifts back and a fist raises. You deduce it's aimed at your nose.
+            You can either counter-attack or block. A counter-attack can win you the fight
+            on a success (75%), but you will lose the fight if you fail. A block will
+            has a chance to block the hit (75%), but you have a smaller chance to hit
+            on your turn (50%). They'll get another hit if you miss.
+          </p>
+        <button class="option-counter-attack">Counter-attack</button>
+        <button class="option-block">Block</button>
+      </page>
+      <page class="fight-win">
+        <h2>You Won the Fight</h2>
+          <p>You pity the fool.
+          </p>
+        <button class="option-proceed-gang">Proceed</button>
+      </page>
+      <page class="the-apartment">
+        <h2 class="apartment">Safe at Your Apartment</h2>
+          <p>
+            You reach your aparment safely. You creep up the wooden staircase
+            to the fourth floor and enter your code on the touchscreen outside
+            your door.
+          </p>
+          <p>
+            Your flat hasn't been cleaned for months. The carpet stains make its
+            original color indiscernible. The dishes topple out of the sink
+            so you've turned to paper plates. But you don't give five flocks of flying
+            rubber duckies because you gotta hack to save your friends.
+          </p>
+          <p>
+            You jump in your office chair and swiftly log in to your laptop.
+            You remember the structure of Viva's security framework: nodes, capture
+            points, and alarms.
+          </p>
+          <p>
+            Your mission is to get a capture point. To get to a capture point, you
+            have to capture two nodes. If you fail to capture a node or capture point,
+            the alarm will sound and you'll die from blue light exposure you shoulda
+            gotten those gamer glasses.
+            <a href="https://gunnar.com/product/heroes-of-the-storm-strike/?attribute_frame-color=Fire&attribute_pa_prescription-lens=none&attribute_pa_lens-tint=amber&gclid=COCEgsvhss8CFYVkhgodIvcHtA">
+              Gamer Glasses</a>
+          </p>
+          <button class="option-log-in">Log In</button>
+      </page>
+      <page class="hack-intro">
+        <h2 class="computer">Hack the Network</h2>
+          <p>
+            You have a 60% chance to secure a node. If you succeed, you continue
+            to the next node, then the capture point.
+          </p>
+          <p>
+            The alarm will sound if you fail five times during a hack.
+          </p>
+          <button class="option-proceed">Proceed</button>
+      </page>
+      <page class="hack-prompt">
+        <h2 class="hack-safe">You're Undetected</h2>
+          <button class="hack-safe-node">Hack the Node</button>
+      </page>
+      <page class="detected-safe-node">
+        <h2 class="hack-detected">You're Detected, but Safe.</h2>
+          <button class="hack-safe-node">Hack the Node</button>
+      </page>
+      <page class="mission-failure">
+        <h2 class="failed-mission">You Failed Your Mission</h2>
+          <p>
+            You failed to complete your mission, but you're placed in the same
+            cell as you were before. Would you like to try again?
+          </p>
+          <button class="play-again">Play Again</button>
+          <button class="exit-game">Give Up</button>
+      </page>
+      <page class="game-win">
+        <h2 class="success">Success</h2>
+          <p>
+            You successfully hacked into Viva's network.
+          </p>
+          <p>
+            Your friends are located at a storage facility in west end.  You'll
+            need to get your sneaking onesie if you plan to infiltrate such a heavily
+            guarded area of the city.
+          </p>
+        <button class="sneaking-onesie">Sneaking Onesie</button>
+      </page>
+      <page class="to-be-continued">
+        <h2 class="continued">To be continued...</h2>
+      </page>
+</body>
 </html>
