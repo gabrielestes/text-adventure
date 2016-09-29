@@ -93,7 +93,7 @@ gangButton.click(function(){
 
 mainButton.click(function(){ // ADD MAIN STREET PAGE
   outsidePage.hide();
-  mainPage.show();
+  missionFailurePage.show();
 });
 
 //Gang Territory
